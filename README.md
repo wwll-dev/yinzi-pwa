@@ -76,4 +76,6 @@ npm run build
 
 ## GitHub Pages
 
-`.github/workflows/deploy-pages.yml` 會喺 push `main` 時 build，再用 `upload-pages-artifact` 同 `deploy-pages` 發佈。Pages 來源要設為 **GitHub Actions**（`build_type=workflow`）。
+`.github/workflows/deploy-pages.yml` 會喺 push `main` 時 build，再用 `upload-pages-artifact` 同 `deploy-pages` 發佈。
+
+第一次要有 repo admin 打開 [Settings → Pages](https://github.com/wwll-dev/yinzi-pwa/settings/pages)，來源揀 **GitHub Actions**。開咗之後，再 push `main`（或者喺 Actions 頁重跑 Deploy GitHub Pages）就會發佈到上面個網址。
